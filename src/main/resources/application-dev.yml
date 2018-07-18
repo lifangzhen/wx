@@ -1,0 +1,4 @@
+server:
+    port: 4000
+    tomcat:
+        uri-encoding: utf-8
