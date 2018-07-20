@@ -11,6 +11,6 @@ public class ScheduleTask implements ApplicationRunner {
     @Override
     @Async
     public void run(ApplicationArguments applicationArguments) throws Exception {
-
+        String aa = "fd";
     }
 }
