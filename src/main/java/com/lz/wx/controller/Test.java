@@ -12,6 +12,7 @@ public class Test {
     @RequestMapping("/index.htm")
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView("/templates/index.ftl");
+        String bb = "fds";
         return mav;
     }
 }
