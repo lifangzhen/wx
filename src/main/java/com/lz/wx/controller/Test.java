@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class Test {
     @RequestMapping("/index.htm")
-    public ModelAndView index() {
+    public ModelAndView index() {  
         ModelAndView mav = new ModelAndView("/templates/index.ftl");
         String bb = "fds";
         return mav;
