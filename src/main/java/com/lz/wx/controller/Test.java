@@ -4,9 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by 71426 on 2018/7/19.
  */
@@ -16,6 +13,7 @@ public class Test {
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView("/templates/index.ftl");
         String aa = "fdsafdsa";
+        String bb = "fds";
         return mav;
     }
 }
