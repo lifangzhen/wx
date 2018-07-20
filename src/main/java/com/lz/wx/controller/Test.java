@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class Test {
     @RequestMapping("/index.htm")
     public ModelAndView index() {
+        String aab = "fdafdsa";
         ModelAndView mav = new ModelAndView("/templates/index.ftl");
         String aa = "fdsafdsa";
         String bb = "fds";
