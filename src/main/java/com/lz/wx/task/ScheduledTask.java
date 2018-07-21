@@ -22,14 +22,14 @@ public class ScheduledTask {
     @Async
     @Scheduled(fixedDelay = 10)
     public void testDelay() throws InterruptedException {
-        Http http = new Http();
-        String response = http.get("http://uney.juniuo.com/trade/indexSells.json");
-        init++;
-        if (init%1000==0){
-            Long end = System.currentTimeMillis();
-            System.out.println("第"+init/1000+"个1000请求花费"+ (end-start)/1000+"秒");
-
-        }
+//        Http http = new Http();
+//        String response = http.get("http://uney.juniuo.com/trade/indexSells.json");
+//        init++;
+//        if (init%1000==0){
+//            Long end = System.currentTimeMillis();
+//            System.out.println("第"+init/1000+"个1000请求花费"+ (end-start)/1000+"秒");
+//
+//        }
     }
 
 }
