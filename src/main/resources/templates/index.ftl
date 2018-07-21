@@ -19,6 +19,9 @@
         <li><span eid="${item.id}" class="lottery_box">${item.name}</span></li>
     </#list>
 </ul>
+<div id="zj">
+    <h2>中奖人:</h2>
+</div>
 <script type="text/javascript">
     /*
 * 抽奖封装对象
@@ -69,11 +72,15 @@
         }, speed)
     };
 
+    var first = Math.ceil(Math.random() * 10);
+    var second = Math.ceil(Math.random() * 10);
+    var third = Math.ceil(Math.random() * 10);
+
     // 抽奖
     $('#btn').click(
             (function(){
                 var n = 3,
-                        aLuckyNum = [2, 5, 8],
+                        aLuckyNum = [first, second, third],
                         oCj = null;
 
                 return function() {
@@ -81,7 +88,7 @@
                         oCj = new LuckyDraw( aLuckyNum[n - 1] );
                         n--;
                         oCj.tigerMac( 1, function(){
-                            alert('恭喜'+$(this).text()+'中奖啦，请上来领奖');
+                            $("#zj").append('<h1 style="background-color: grey">'+$(this).text()+'</h1>');
 //                            if ( Number( $(this).text() ) === 6 ) {
 //                                alert('恭喜中奖啦！你还有' + n + '次抽奖机会哦！');
 //                            } else if ( n ) {
@@ -92,7 +99,7 @@
                         } );
                         oCj = null;
                     }else {
-                        alert('你没有抽奖机会啦');
+                        alert('只有三个奖项');
                     }
                 }
             })()
