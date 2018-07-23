@@ -13,8 +13,18 @@ import java.util.List;
  */
 @Controller
 public class Test {
+
+    public void plus(int i, int j){
+        int k = i+j;
+    }
+
+    public int tt(int i, int j){
+        int k = i + j;
+        return k;
+    }
+
     @RequestMapping("/index")
-    public ModelAndView index(String name) {
+    public ModelAndView index() {
         ModelAndView mav = new ModelAndView("/index");
         List<User> list = new ArrayList<>();
         User user1 = new User();

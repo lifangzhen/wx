@@ -5,10 +5,22 @@ package com.lz.wx.controller;
  */
 public class boo {
     public static void main(String[] args) {
-        int lang=2;
-        int yang=6;
-       // lang=lang+7;
-        boolean pk=(lang=lang+2)>yang;
-        System.out.println(pk);
+        int x=8;
+       // x+=5;//相当于x=x+5
+        x*=5;//相当于x=x*5
+
+
+        System.out.println(x);
+
+
+
+
+
+
+
+
+
+
+
     }
 }

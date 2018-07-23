@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE HTML>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -72,7 +71,7 @@
         }, speed)
     };
 
-    var first = Math.ceil(Math.random() * 10);
+    var first = 2;
     var second = Math.ceil(Math.random() * 10);
     var third = Math.ceil(Math.random() * 10);
 
