@@ -1,6 +1,7 @@
 package com.lz.wx.controller;
 
 import com.sun.org.apache.xpath.internal.operations.Mod;
+import org.omg.CORBA.PUBLIC_MEMBER;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,16 +23,31 @@ public class UserController {
     }
 
 
-    @RequestMapping("/school")
-    public ModelAndView  getschool(String classroom,String name,String score){
-        ModelAndView modelAndView = new ModelAndView("/school");
-        modelAndView.addObject("classroom",classroom);
-        modelAndView.addObject("name", name);
-        modelAndView.addObject("score",score);
-        return  modelAndView;
+
+
+
+
+    @RequestMapping("/phone")
+    public ModelAndView phone(){
+        ModelAndView mav=new ModelAndView("phone");
+        mav.addObject("sanxing", "6899￥");
+        mav.addObject("xiaomi",  "3999￥");
+        mav.addObject("pinguo",  "7998￥");
+        mav.addObject("oppo",    "8999￥");
+        mav.addObject("vivo",    "2999￥");
+        mav.addObject("huawei",  "4000￥");
+        return mav;
     }
 
-    @RequestMapping("/dorm")
+
+
+
+
+
+
+
+
+        @RequestMapping("/dorm")
     public ModelAndView dorm(){
         ModelAndView mav = new ModelAndView("/dorm");
         mav.addObject("bedone","闫柏龙");
@@ -40,6 +56,5 @@ public class UserController {
         mav.addObject("bedfour","老头");
         return mav;
     }
-    public  ModelAndView 
 }
 
