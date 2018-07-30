@@ -5,7 +5,7 @@ package com.lz.wx.controller;
  */
         /*三目运算*/
 
-public class boo {
+public class Boo {
     public static void main(String[] args) {
        char ts='人';
        char bgj='妖';

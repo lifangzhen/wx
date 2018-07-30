@@ -1,10 +1,15 @@
 package com.lz.wx.controller;
 
+import com.lz.wx.service.UserService;
+import com.lz.wx.service.impl.UserServiceImpl;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.omg.CORBA.PUBLIC_MEMBER;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -22,11 +27,6 @@ public class UserController {
         return mav;
     }
 
-
-
-
-
-
     @RequestMapping("/phone")
     public ModelAndView phone(){
         ModelAndView mav=new ModelAndView("phone");
@@ -39,15 +39,7 @@ public class UserController {
         return mav;
     }
 
-
-
-
-
-
-
-
-
-        @RequestMapping("/dorm")
+    @RequestMapping("/dorm")
     public ModelAndView dorm(){
         ModelAndView mav = new ModelAndView("/dorm");
         mav.addObject("bedone","闫柏龙");
