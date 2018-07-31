@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by 26949 on 2018/7/24.
  */
-public class day01 {
+public class Day01 {
     public static void main(String[] args) {
         //step1定义输入变量：单价，数量，收款金额。
         double price,amount,money;
@@ -13,8 +13,8 @@ public class day01 {
         double total,change;
         Scanner sc=new Scanner(System.in);
         //step3提示用户三个值，并保存到对应变量中。
-        System.out.println("请输入商品单价：");
         //使用变量sc获得数据
+        System.out.println("请输入商品单价：");
         price=sc.nextDouble();
         //程序运行到此会暂停，等待用户输入
         //如果用户在控制台输入了数据，就按回车
