@@ -12,7 +12,7 @@ import java.util.List;
  * Created by 71426 on 2018/7/19.
  */
 @Controller
-public class Test {
+public class Lottery {
 
     public void plus(int i, int j){
         int k = i+j;
