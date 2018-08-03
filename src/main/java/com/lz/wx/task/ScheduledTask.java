@@ -1,6 +1,5 @@
 package com.lz.wx.task;
 
-import com.lz.wx.controller.Test;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.Scheduled;

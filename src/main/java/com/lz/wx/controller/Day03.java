@@ -20,9 +20,11 @@ public class Day03 {
 
 
        for (int n=1;n<=9;n++){
-           for (int i=1;i<=n;i++){
+           for (int i=1;i<=2;i++){
                System.out.print(i+"*"+n+"="+(i*n)+" ");
            }System.out.println();
+
+
        }
 
     }
