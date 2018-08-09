@@ -17,7 +17,8 @@ public class LogoutController {
 
    @RequestMapping("/logout")
    @ResponseBody
-    public void logout(String mobile,String password){logoutService.logout(mobile,password);
+    public void logout(String mobile,String password) {
+               logoutService.logout(mobile,password);
    }
 }
 

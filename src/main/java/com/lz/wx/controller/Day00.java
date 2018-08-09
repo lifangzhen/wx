@@ -5,7 +5,7 @@ package com.lz.wx.controller;
  */
         /*三目运算*/
 
-public class Boo {
+public class Day00 {
     public static void main(String[] args) {
        char ts='人';
        char bgj='妖';
@@ -17,9 +17,9 @@ public class Boo {
        System.out.println(r);
 
 
-       int athlete1=97;
-       int athlete2=88;
-       int performance=athlete1>athlete2?athlete1:athlete2;
+        int student1=98;
+        int student2=89;
+        int performance=student1>student2?student1:student2;
         System.out.println(performance);
 
 

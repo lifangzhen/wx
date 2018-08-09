@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by 26949 on 2018/8/2.
  */
 @Service
-public class AmendServiceImpl implements AmendService{
+public class AmendServiceImpl implements AmendService {
     @Override
     public void amend(String name, String signature) {
         System.out.println(name+"姓名修改中");

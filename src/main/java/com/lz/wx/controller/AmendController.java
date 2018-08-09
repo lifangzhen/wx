@@ -14,7 +14,11 @@ public class AmendController {
 
     @Autowired AmendService amendService;
 
+
     @RequestMapping("/Amend")
    @ResponseBody
-    public void Amend(String name,String signature){amendService.amend(name,signature);}
+    public void Amend(String name,String signature) {
+        amendService.amend(name,signature);
+        amendService.succeed(name,signature);
+    }
 }
