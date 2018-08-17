@@ -48,5 +48,8 @@ public class UserController {
         mav.addObject("bedfour","老头");
         return mav;
     }
+
+
 }
+
 
