@@ -15,11 +15,9 @@ public class ATMCBCTest {
         ATMCBCServiceImpl atm=new ATMCBCServiceImpl();
         //实例化一张银行卡
        IUnionCardServiceImpl card=new IUnionCardServiceImpl("CBC","123456",5000);
-       //将银行卡放入取款机11
+       //将银行卡放入取款机
        atm.setCard(card);
         //提示用户输入密码
-        System.out.println("欢迎使用建设银行ATM取款机");
-        System.out.println("用户李龙龙");
         System.out.println("请输入密码");
         Scanner sc=new Scanner(System.in);
         String input=sc.next();
