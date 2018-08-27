@@ -5,6 +5,8 @@ package com.lz.wx.service;
  */
 public interface UserService {
 
+    public void regist(String name, String mobile, String passwd, Integer age, Integer sex);
+
     public boolean login(String mobile, String password);
 
     public double getBalance(String mobile);

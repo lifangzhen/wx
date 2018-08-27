@@ -19,8 +19,8 @@ public class RegistController {
 
     @RequestMapping("/regist")
     @ResponseBody
-    public void regist(String mobile, String password){
-        registService.regist(mobile,password);
+    public void regist(String name, String mobile, String password ,Integer age, Integer sex){
+        userService.regist(name,mobile, password, age, sex);
     }
 
 

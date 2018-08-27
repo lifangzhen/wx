@@ -13,7 +13,7 @@ import java.util.HashMap;
 @Component
 @EnableAsync
 public class ScheduledTask {
-    public static HashMap<String,String> map = new HashMap<>();
+    public static HashMap<String,String> map = new HashMap<String, String>();
     public static Long start = System.currentTimeMillis();
     public static Integer init = 0;
 

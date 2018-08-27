@@ -15,20 +15,20 @@ public class SyncTest {
     @Autowired private UserService userService;
 
     @Async
-    @Scheduled(fixedDelay = 1)
+//    @Scheduled(fixedDelay = 1)
     public void test1() throws InterruptedException {
-        for (int i=0;i<10;i++){
-            String userId = i+"id";
-            userService.getUser(userId);
-        }
+//        for (int i=0;i<10;i++){
+//            String userId = i+"id";
+//            userService.getUser(userId);
+//        }
     }
 
     @Async
-    @Scheduled(fixedDelay = 1)
+//    @Scheduled(fixedDelay = 1)
     public void test2() throws InterruptedException {
-        for (int i=0;i<10;i++){
-            String userId = i+"id";
-            userService.getUser(userId);
-        }
+//        for (int i=0;i<10;i++){
+//            String userId = i+"id";
+//            userService.getUser(userId);
+//        }
     }
 }

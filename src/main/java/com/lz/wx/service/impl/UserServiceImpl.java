@@ -1,13 +1,34 @@
 package com.lz.wx.service.impl;
 
+import com.lz.wx.dao.UserDao;
+import com.lz.wx.model.User;
 import com.lz.wx.service.UserService;
+import com.lz.wx.utils.IDGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
 
 /**
  * Created by 26949 on 2018/7/27.
  */
 @Service
 public class UserServiceImpl implements UserService {
+    @Autowired private UserDao userDao;
+
+    @Override
+    public void regist(String name, String mobile, String passwd, Integer age, Integer sex) {
+
+        User user = new User();
+        user.setId(IDGenerator.nextId());
+        user.setName(name);
+        user.setMobile(mobile);
+        user.setPasswd(passwd);
+        user.setAge(age);
+        user.setSex(sex);
+        user.setDateCreated(new Date());
+        userDao.save(user);
+    }
 
     @Override
     public boolean login(String mobile, String password) {
@@ -17,9 +38,8 @@ public class UserServiceImpl implements UserService {
 
         if (mobile.equals(sjh) && password.equals(mima)){
             return true;
-        }
-
-        return false;
+        }else
+            return false;
     }
 
     @Override
