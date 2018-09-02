@@ -23,4 +23,3 @@ public class Test01 {
         teacher.show();
     }
 }
- 
