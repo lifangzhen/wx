@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @EnableAsync
 public class SyncTest {
-    @Autowired private UserService userService;
+//    @Autowired private UserService userService;
 
     @Async
 //    @Scheduled(fixedDelay = 1)

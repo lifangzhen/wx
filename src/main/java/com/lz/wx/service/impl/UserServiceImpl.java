@@ -1,6 +1,8 @@
 package com.lz.wx.service.impl;
 
+import com.lz.wx.dao.HuafuDao;
 import com.lz.wx.dao.UserDao;
+import com.lz.wx.model.Huafu;
 import com.lz.wx.model.User;
 import com.lz.wx.service.UserService;
 import com.lz.wx.utils.IDGenerator;
@@ -15,6 +17,7 @@ import java.util.Date;
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired private UserDao userDao;
+    @Autowired private HuafuDao huafuDao;
 
     @Override
     public void regist(String name, String mobile, String passwd, Integer age, Integer sex) {
@@ -28,6 +31,16 @@ public class UserServiceImpl implements UserService {
         user.setSex(sex);
         user.setDateCreated(new Date());
         userDao.save(user);
+    }
+
+    @Override
+    public void insertHuafu(String name, String gender, int age) {
+        Huafu huafu = new Huafu();
+        huafu.setId(IDGenerator.nextId());
+        huafu.setName(name);
+        huafu.setGender(gender);
+        huafu.setAge(age);
+        huafuDao.save(huafu);
     }
 
     @Override
