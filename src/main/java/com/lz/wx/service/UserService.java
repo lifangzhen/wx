@@ -7,6 +7,8 @@ public interface UserService {
 
     public void regist(String name, String mobile, String passwd, Integer age, Integer sex);
 
+    public void insertHuafu(String name, String gender, int age);
+
     public boolean login(String mobile, String password);
 
     public double getBalance(String mobile);
