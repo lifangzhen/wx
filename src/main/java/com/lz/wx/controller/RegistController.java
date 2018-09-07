@@ -1,5 +1,6 @@
 package com.lz.wx.controller;
 
+import com.lz.wx.service.CompanyService;
 import com.lz.wx.service.RegistService;
 import com.lz.wx.service.SchoolService;
 import com.lz.wx.service.UserService;
@@ -18,6 +19,7 @@ public class RegistController {
     @Autowired RegistService registService;
     @Autowired UserService userService;
     @Autowired SchoolService schoolService;
+    @Autowired CompanyService companyService;
 
     @RequestMapping("/regist")
     @ResponseBody
@@ -30,10 +32,17 @@ public class RegistController {
     public void addHuafu(String name, String gener,int age){
         userService.insertHuafu(name, gener, age);
     }
-    @RequestMapping("/School")
+
+    @RequestMapping("/school")
     @ResponseBody
-    public void School(String name, String location, String rector, String contacts, int number){
+    public void school(String name, String location, String rector, String contacts, int number){
         schoolService.school(name,location,rector,contacts,number);
+    }
+    @RequestMapping("/company")
+    @ResponseBody
+    public void  company(String name, int age,String hobby){
+        companyService.company(name,age,hobby);
+
     }
 
 }

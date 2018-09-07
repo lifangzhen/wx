@@ -9,27 +9,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Created by 26949 on 2018/9/6.
+ * Created by 26949 on 2018/9/7.
  */
-
 @Entity
-@Table(name = "lab")
+@Table(name = "company")
 @DynamicInsert
 @DynamicUpdate
-public class Lab {
+public class Company {
     @Id
     @Column(name = "id")
     private String id;
     @Column(name = "name")
     private String name;
-    @Column(name = "sex")
-    private String sex;
     @Column(name = "age")
     private int age;
-    @Column(name = "education")
-    private String education;
-    @Column(name = "work_age")
-    private int workAge;
+    @Column(name = "hobby")
+    private String hobby;
 
     public String getId() {
         return id;
@@ -47,14 +42,6 @@ public class Lab {
         this.name = name;
     }
 
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
     public int getAge() {
         return age;
     }
@@ -63,23 +50,11 @@ public class Lab {
         this.age = age;
     }
 
-    public String getEducation() {
-        return education;
+    public String getHobby() {
+        return hobby;
     }
 
-    public void setEducation(String education) {
-        this.education = education;
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
     }
-
-    public int getWorkAge() {
-        return workAge;
-    }
-
-    public void setWorkAge(int workAge) {
-        this.workAge = workAge;
-    }
-
-
-
-
 }
