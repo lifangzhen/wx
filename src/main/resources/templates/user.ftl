@@ -6,6 +6,9 @@
 </head>
 <body>
 <h2>用户名称:${name}</h2>
-<h2>用户年龄:${age}</h2>
+<h2>用户名称:${age}</h2>
+<h2>用户得分:${score}</h2>
+
+
 </body>
 </html>

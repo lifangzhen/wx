@@ -17,6 +17,6 @@ public class RelevanceController {
     @RequestMapping("/Relevance")
     @ResponseBody
     public void setRelevanceService(String number,String password){
-                      relevanceService.relevance(number,password);
+        relevanceService.relevance(number,password);
     }
 }

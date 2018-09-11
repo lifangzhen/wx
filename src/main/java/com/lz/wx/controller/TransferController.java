@@ -19,8 +19,8 @@ public class TransferController {
 
     @RequestMapping("/transfer")
     @ResponseBody
-    public void transfer
-            (String select, String connect, String send) {
+    public void transfer(String select, String connect, String send) {
+
         transferService.transfer(select,connect,send);
     }
 }

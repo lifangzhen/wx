@@ -10,7 +10,6 @@ public class Teacher {
     public int teacingAge;
 
     public void show(){
-        System.out.println
-                ("大家好我是"+name+"我的专业是"+major+"所教授的课程是"+giveCourse+"教龄是"+teacingAge);
+        System.out.println("大家好我是"+name+"我的专业是"+major+"所教授的课程是"+giveCourse+"教龄是"+teacingAge);
     }
 }

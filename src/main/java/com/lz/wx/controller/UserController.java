@@ -49,7 +49,18 @@ public class UserController {
         return mav;
     }
 
+    @RequestMapping("/teacher")
+    public ModelAndView teacher() {
+        ModelAndView mav = new ModelAndView("/teacher");
+        mav.addObject("language", "王小明");
+        mav.addObject("mathematics", "王小红");
+        mav.addObject("English", "周小米");
+        mav.addObject("physics", "苏小玉");
+        mav.addObject("chemistry", "赵小秋");
+        mav.addObject("geography", "李小鹏");
+        return mav;
+    }
+
 
 }
-
 

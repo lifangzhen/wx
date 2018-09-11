@@ -17,6 +17,6 @@ public class SettingController {
     @RequestMapping("setTing")
     @ResponseBody
     public void setting(String typeface,String colour){
-              settingService.setting(typeface,colour);
+        settingService.setting(typeface,colour);
     }
 }
