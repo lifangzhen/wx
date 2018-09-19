@@ -17,6 +17,12 @@ public class CompanyServiceImpl implements CompanyService {
     @Autowired CompanyDao companyDao;
 
     @Override
+    public Company findGradeById(String id) {
+        Company company=companyDao.findById(id).orElse(null) ;
+        return company;
+    }
+
+    @Override
     public void company(String name, int age, String hobby) {
 
         for (int i=1;i<=100;i++){

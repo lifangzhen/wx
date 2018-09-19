@@ -13,6 +13,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class CommunityServiceImpl implements CommunityService{
     @Autowired private CommunityDao communityDao;
+
+
+    @Override
+    public Community findGradeById(String id) {
+        Community community=communityDao.findById(id).orElse(null);
+        return community;
+    }
+
     @Override
     public void community(String name, int age, String hobby, String sex) {
         Community community=new Community();

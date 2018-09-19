@@ -12,7 +12,7 @@ import javax.persistence.Table;
  * Created by 26949 on 2018/9/5.
  */
 @Entity
-@Table(name = "school")
+@Table(name = "statistics")
 @DynamicInsert
 @DynamicUpdate
 public class School {
@@ -31,50 +31,62 @@ public class School {
     private int  number;
 
     public String getId() {
+
         return id;
     }
 
     public void setId(String id) {
+
         this.id = id;
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getLocation() {
+
         return location;
     }
 
     public void setLocation(String location) {
+
         this.location = location;
     }
 
     public String getRector() {
+
         return rector;
     }
 
     public void setRector(String rector) {
+
         this.rector = rector;
     }
 
     public String getContacts() {
+
         return contacts;
     }
 
     public void setContacts(String contacts) {
+
         this.contacts = contacts;
     }
 
     public int  getNumber() {
+
         return number;
     }
 
     public void setNumber(int number) {
+
         this.number=number;
     }
 }

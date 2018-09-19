@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class GradeController {
-    @Autowired
-    GradeService gradeService;
+    @Autowired GradeService gradeService;
 
     @RequestMapping("/grade")
     @ResponseBody

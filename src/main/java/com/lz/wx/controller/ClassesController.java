@@ -1,23 +1,22 @@
 package com.lz.wx.controller;
 
-import com.lz.wx.service.SettingService;
+import com.lz.wx.service.ClassesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by 26949 on 2018/8/6.
+ * Created by 26949 on 2018/9/17.
  */
 @Controller
-public class SettingController {
-    @Autowired SettingService settingService;
+public class ClassesController {
+    @Autowired ClassesService abc;
 
 
-    @RequestMapping("setTing")
+    @RequestMapping("/classes")
     @ResponseBody
-    public void setting(String typeface,String colour){
-
-        settingService.setting(typeface,colour);
+    public void classes(String name,int age,String hobby,String speciality){
+        abc.classes(name,age,hobby,speciality);
     }
 }

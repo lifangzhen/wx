@@ -15,6 +15,12 @@ public class GradeServiceImpl implements GradeService {
     @Autowired GradeDao gradeDao;
 
     @Override
+    public Grade findGradeById(String id) {
+        Grade grade = gradeDao.findById(id).orElse(null);
+        return grade;
+    }
+
+    @Override
     public void grade(String name, int language, int mathematics, int English) {
             Grade grade=new Grade();
             grade.setId(IDGenerator.nextId());

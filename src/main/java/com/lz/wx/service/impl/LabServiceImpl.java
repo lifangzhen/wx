@@ -12,7 +12,13 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class LabServiceImpl implements LabService {
-    @Autowired private LabDao labDao;
+      @Autowired LabDao labDao;
+
+    @Override
+    public Lab findGradeById(String id) {
+        Lab lab=labDao.findById(id).orElse(null);
+        return lab;
+    }
 
     @Override
     public void lab(String name, String sex, int age, String education, int workAge) {

@@ -15,5 +15,6 @@ public class CommunityController {
 
     @RequestMapping("/community")
     @ResponseBody
-    public void community(String name,int age,String hobby,String sex){communityService.community(name,age,hobby,sex);}
+    public void community(String name,int age,String hobby,String sex){
+        communityService.community(name,age,hobby,sex);}
 }
