@@ -1,19 +1,40 @@
 package com.lz.wx.service;
 
+import com.lz.wx.model.User;
+
 /**
- * Created by 26949 on 2018/7/27.
+ * Created by yjingjing on 2018/11/12.
  */
-public interface UserService {
+public interface UserService{
+    /**
+     * addUser
+     * @param name
+     * @param sex
+     * @param age
+     */
 
-    public void regist(String name, String mobile, String passwd, Integer age, Integer sex);
+    public void addUser(String name,String sex,Integer age);
+    /**
+     * updateUser
+     * @param id
+     * @param name
+     * @param sex
+     * @param age
+     */
+    public void updateUserById(String id,String name,String sex,Integer age);
+    /**
+     * getUser
+     * @param id
+     * @return
+     */
+    public void getUserById(String id);
+    /**
+     * deleteUser
+     * @param id
+     */
+    public void deleteUserById(String id);
 
-    public void insertHuafu(String name, String gender, int age);
 
-    public boolean login(String mobile, String password);
 
-    public double getBalance(String mobile);
 
-    public void printMessage(String msg);
-
-    public String getName(String id);
 }
