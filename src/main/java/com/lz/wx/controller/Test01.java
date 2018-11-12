@@ -12,7 +12,7 @@ public class Test01 {
         student.course="java";
         student.hobby="唱歌";
         student.show();
-
+        System.out.println("test");
 
 
         Teacher teacher=new Teacher();
